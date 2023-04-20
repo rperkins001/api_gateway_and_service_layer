@@ -1,20 +1,20 @@
 import requests
 from config.api_config import API_CONFIG
 from service_layer import (
-    customer_example_function,
-    jira_example_function,
-    dns_example_function,
+    customer_example,
+    jira_example,
+    dns_example,
 )
 
 FUNCTION_MAP = {
     'customer_tickets': {
-        'example_function': customer_example_function,
+        'example_function': customer_example,
     },
     'jira_tickets': {
-        'example_function': jira_example_function,
+        'example_function': jira_example,
     },
     'dns': {
-        'example_function': dns_example_function,
+        'example_function': dns_example,
     },
 }
 
