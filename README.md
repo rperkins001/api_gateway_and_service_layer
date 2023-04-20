@@ -15,33 +15,31 @@ of this example is to provide an understanding of how an API gateway can be stru
 The project follows a well-organized structure with a separation of concerns, 
 which makes it easier to understand and maintain:
 
-
-- `api_gateway` - API gateway-related code, responsible for directing incoming API requests to the appropriate service layer.
-    - `__init__.py`
-    - `api_gateway.py`
-- `config` - Configuration files for the API.
-    - `api_config.py`
-- `service_layer` - Service layer code, handling the business logic for different services like customer tickets, DNS, and Jira tickets.
-    - `__init__.py`
-    - `customer_tickets_service.py`
-    - `dns_service.py`
-    - `jira_tickets_service.py`
-- `sources` - Code for different data sources (Jira, customer, and DNS), used by the service layer.
-    - `customer_tickets`
-        - `__init__.py`
-        - `customer_tickets.py`
-    - `dns`
-        - `__init__.py`
-        - `dns.py`
-    - `jira_tickets`
-        - `__init__.py`
-        - `jira_tickets.py`
-- `utils` - Utility code for error handling and logging.
-    - `__init__.py`
-    - `error_handling.py`
-    - `logging.py`
-- `main.py` - The main entry point of the application.
-
+- api_gateway
+    - __init__.py
+    - api_gateway.py
+- config
+    - api_config.py
+- service_layer
+    - __init__.py
+    - customer_tickets_service.py
+    - dns_service.py
+    - jira_tickets_service.py
+- sources
+    - customer_tickets
+        - __init__.py
+        - customer_tickets.py
+    - dns
+        - __init__.py
+        - dns.py
+    - jira_tickets
+        - __init__.py
+        - jira_tickets.py
+- utils
+    - __init__.py
+    - error_handling.py
+    - logging.py
+- main.py
 
 ## Explanation
 
