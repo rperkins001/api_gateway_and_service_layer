@@ -1,4 +1,4 @@
-def jira_example_function(data=None):
+def jira_example(data=None):
     # Implement the actual functionality here
     result = "Jira example function result"
     return result
