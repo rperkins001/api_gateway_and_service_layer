@@ -1,11 +1,11 @@
-from api_wall.api_wall import APIWallService
+from api_gateway.api_gateway import APIGatewayService
 from sources.customer_tickets.customer_tickets import CustomerTickets
 from sources.jira_tickets.jira_tickets import JiraTickets
 from sources.dns.dns import DNS
 
 def main():
     # Initialize the API wall service
-    api_wall_service = APIWallService()
+    api_wall_service = APIGatewayService()
 
     # Initialize source-specific classes
     customer_tickets = CustomerTickets(api_wall_service)
